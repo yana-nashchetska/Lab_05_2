@@ -12,9 +12,10 @@ namespace UnitTest52
 		
 		TEST_METHOD(TestMethod1)
 		{
-			int t;
-			t = A(2, 5, 0);
-			Assert::AreEqual(t, 0);
+			double a;
+			int n = 0;
+			a = S(2, 0.0001, n);
+			Assert::AreEqual(a, 0.34657, 0.0001);
 		}
 	};
 }
